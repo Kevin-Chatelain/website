@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: initial !important;
+}
+
+@-webkit-keyframes marque-apparition {
+  0% {
+    filter: opacity(0);
+    transform: translateY(20px);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes marque-apparition {
+  0% {
+    filter: opacity(0);
+    transform: translateY(20px);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition-gauche {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+  }
+}
+@keyframes apparition-gauche {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body h1, body h3 {
+  font-family: "Libre Baskerville", serif;
+}
+body h2, body h4 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+body h3 {
+  font-size: 2.4em;
+  margin-bottom: 30px;
+}
+body h4 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+body a {
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+}
+body p, body em {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1em;
+}
+body button {
+  cursor: pointer;
+  padding: 5px 20px 10px 20px;
+  font-size: 1.2em;
+  font-family: "Libre Baskerville", serif;
+  border: none;
+  font-weight: bold;
+  margin: 15px auto 0 auto;
+}
+body button svg {
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  fill: none;
+  transform: translateY(5px);
+  transition: 0s;
+}
+body .signature {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 1.3em;
+}
+
+header {
+  width: 80%;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+  padding: 30px 0;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom-width: 1.6px;
+  border-bottom-style: solid;
+  top: 0;
+}
+header a {
+  display: block;
+  font-weight: 400;
+  font-size: 1.35em;
+  transition: 0.4s;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+main section {
+  margin: 250px auto;
+  width: 100%;
+}
+main section:nth-child(1) {
+  min-height: 80vh;
+  align-items: center;
+  margin: 0;
+}
+
+.active {
+  position: relative;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 2px;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: 0.4s apparition-gauche ease-in forwards;
+          animation: 0.4s apparition-gauche ease-in forwards;
+}
+
+.marque {
+  position: fixed;
+  left: 50px;
+  bottom: 40px;
+  z-index: 5;
+  width: 200px;
+  height: 30px;
+}
+.marque span {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: "Libre Baskerville", serif;
+  position: absolute;
+  -webkit-animation: 0.5s marque-apparition ease-in forwards;
+          animation: 0.5s marque-apparition ease-in forwards;
+  display: none;
+}
+
+.barre {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.barre::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.barre:hover::after {
+  bottom: -10px;
+}
+
+.mode-nuit {
+  position: fixed;
+  right: 35px;
+  bottom: 280px;
+  cursor: pointer;
+}
+.mode-nuit svg {
+  height: 60px;
+  width: 60px;
+  fill: transparent;
+  transition: 0.1s;
+}
+
+.progression {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+.progression div {
+  height: 17px;
+  width: 17px;
+  border-width: 3px;
+  border-style: solid;
+  margin: 25px auto 25px auto;
+  cursor: pointer;
+}
+.progression div:nth-child(4) {
+  margin-bottom: 0;
+}
+.progression div:hover {
+  transform: scale(1.2);
+}
+.progression .position {
+  transform: scale(1.5);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.rectangle {
+  border-style: solid;
+  border-width: 4px;
+  position: absolute;
+  z-index: 1;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: initial !important;
+}
+
+@-webkit-keyframes marque-apparition {
+  0% {
+    filter: opacity(0);
+    transform: translateY(20px);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes marque-apparition {
+  0% {
+    filter: opacity(0);
+    transform: translateY(20px);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition-gauche {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+  }
+}
+@keyframes apparition-gauche {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+  }
+}
+section#accueil {
+  display: flex;
+  justify-content: space-between;
+}
+section#accueil .gauche {
+  width: 50%;
+}
+section#accueil .gauche h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+section#accueil .gauche h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.75em;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+section#accueil .gauche p {
+  margin-bottom: 30px;
+}
+section#accueil .gauche div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section#accueil .gauche div p {
+  width: 50%;
+  margin-bottom: 0;
+}
+section#accueil .gauche div div {
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+section#accueil .droite {
+  position: relative;
+  transform: translateY(-20px);
+}
+section#accueil .droite .image {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  transform: translateX(-90px);
+}
+section#accueil .droite .image img {
+  max-width: 100%;
+  height: auto;
+}
+section#accueil .droite .rectangle {
+  width: 400px;
+  height: 400px;
+  left: -40px;
+  top: 40px;
+}/*# sourceMappingURL=accueil.css.map */

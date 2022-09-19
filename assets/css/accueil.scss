@@ -1,0 +1,78 @@
+@import "./propreties.scss";
+
+
+section#accueil {
+
+    display: flex;
+    justify-content: space-between;
+
+    .gauche {
+        width: 50%;
+
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: $main_font;
+            font-size: 2.75em;
+            margin-bottom: 30px;
+            font-weight: 400;
+
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        div {
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                width: 50%;
+                margin-bottom: 0;
+            }
+
+            div  {
+                width: 50%;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .droite {
+
+        position: relative;
+        transform: translateY(-20px);
+
+       .image {
+            position: relative;
+            z-index: 2;
+            width: 400px;
+            transform: translateX(-90px);
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+       } 
+
+       .rectangle {
+            width: 400px;
+            height: 400px;
+            left: -40px;
+            top: 40px;
+       }
+    }
+}
+
+

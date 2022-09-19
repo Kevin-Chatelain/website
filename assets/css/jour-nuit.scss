@@ -1,0 +1,229 @@
+@import './propreties.scss';
+
+/////////////////
+///STYLE JOUR/// 
+///////////////
+
+body.jour {
+    background-color: $beige;
+
+    * {
+        color: $black;
+    }
+
+    header {
+        background-color: $beige;
+        border-bottom-color: $black;
+    }
+
+    .active::after {
+        background-color: $black;
+    }
+
+    .barre::after {
+        background-color: $black;
+    }
+
+    .mode-nuit {
+        svg {
+            stroke: $black;
+        }
+
+        &:hover {
+            svg {
+                fill: $black;
+            }
+    
+        }
+    }
+
+    .progression {
+        div {
+            border-color: $black;
+
+            &:hover {
+              background-color: $black;  
+            }
+        }
+        
+        .position {
+            background-color: $black;
+        }
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $black;
+    } 
+
+    .rectangle {
+        border-color: $black;
+    }
+
+    button {
+        background-color: transparent;
+        color: $black;
+
+        &:hover {
+            background-color: $black;
+            color: $beige;
+
+            svg {
+               stroke: $beige;
+            }
+        }
+
+        svg {
+            stroke: $black;
+        }
+    }
+
+    .fond-noir {
+        background-color: $black;
+
+        a {
+            color: $beige;
+        }
+    }
+
+    .coordonnees {
+        svg {
+            fill: $black;
+        }
+    }
+
+    .formulaire {
+        background-color: $black;
+        color: $beige;
+
+        h3 {
+            color: $beige;
+        }
+
+        label {
+            color: $beige;
+        }
+
+        input, textarea {
+            border-color: $beige;
+            color: $beige;
+            background-color: $black;
+        }
+    }
+}
+
+
+
+/////////////////
+///STYLE NUIT/// 
+///////////////
+
+body.nuit {
+    background-color: $black;
+
+    * {
+        color: $beige;
+    }
+
+    header {
+        background-color: $black;
+        border-bottom-color: $beige;
+    }
+
+    .active::after {
+        background-color: $beige;
+    }
+
+    .barre::after {
+        background-color: $beige;
+    }
+
+    .mode-nuit {
+        svg {
+            stroke: $beige;
+        }
+
+        &:hover {
+            svg {
+                fill: $beige;
+            }
+        }
+    }
+
+    .progression {
+        div {
+            border-color: $beige;
+
+            &:hover {
+                background-color: $beige;
+            }
+        }
+
+
+        .position {
+            background-color: $beige;
+        }
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $beige;
+    }
+
+    .rectangle {
+        border-color: $beige;
+    }
+
+
+    button {
+        background-color: transparent;
+        color: $beige;
+
+        &:hover {
+            background-color: $beige;
+            color: $black;
+
+            svg {
+                stroke: $black;
+            }
+        }
+
+        svg {
+            stroke: $beige;
+        }
+    }
+
+    .fond-noir {
+        background-color: $beige;
+
+        a {
+            color: $black;
+        }
+    }
+
+    .coordonnees {
+        svg {
+            fill: $beige !important;
+        }
+    }
+
+    .formulaire {
+        background-color: $beige;
+        color: $black;
+
+        h3 {
+            color: $black;
+        }
+
+        label {
+            color: $black;
+        }
+
+        input, textarea {
+            border-color: $black;
+            color: $black;
+            background-color: $beige;
+        }
+
+
+    }
+    
+}

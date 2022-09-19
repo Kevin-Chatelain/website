@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: initial !important;
+}
+
+@-webkit-keyframes marque-apparition {
+  0% {
+    filter: opacity(0);
+    transform: translateY(20px);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes marque-apparition {
+  0% {
+    filter: opacity(0);
+    transform: translateY(20px);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition-gauche {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+  }
+}
+@keyframes apparition-gauche {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+  }
+}
+section#projets .projet-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px auto;
+}
+section#projets .projet-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+section#projets .projet-container:nth-child(even) .projet-visuel {
+  margin-left: 100px;
+}
+section#projets .projet-container:nth-child(even) .projet-visuel .fond-noir {
+  bottom: -30px;
+  right: 50px;
+}
+section#projets .projet-container:nth-child(odd) {
+  flex-direction: row;
+}
+section#projets .projet-container:nth-child(odd) .projet-visuel {
+  margin-right: 100px;
+}
+section#projets .projet-container .projet-visuel {
+  width: 35%;
+  position: relative;
+}
+section#projets .projet-container .projet-visuel .projet-image {
+  height: auto;
+  width: 300px;
+  position: relative;
+  z-index: 2;
+}
+section#projets .projet-container .projet-visuel .projet-image img {
+  height: auto;
+  max-width: 100%;
+}
+section#projets .projet-container .projet-visuel .fond-noir {
+  width: 300px;
+  height: 205px;
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+  right: -50px;
+}
+section#projets .projet-container .projet-visuel .fond-noir a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4em;
+}/*# sourceMappingURL=projets.css.map */

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: initial !important;
+}
+
+@-webkit-keyframes marque-apparition {
+  0% {
+    filter: opacity(0);
+    transform: translateY(20px);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes marque-apparition {
+  0% {
+    filter: opacity(0);
+    transform: translateY(20px);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition-gauche {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+  }
+}
+@keyframes apparition-gauche {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+  }
+}
+body.jour {
+  background-color: #FFF2C8;
+}
+body.jour * {
+  color: #0E0E0E;
+}
+body.jour header {
+  background-color: #FFF2C8;
+  border-bottom-color: #0E0E0E;
+}
+body.jour .active::after {
+  background-color: #0E0E0E;
+}
+body.jour .barre::after {
+  background-color: #0E0E0E;
+}
+body.jour .mode-nuit svg {
+  stroke: #0E0E0E;
+}
+body.jour .mode-nuit:hover svg {
+  fill: #0E0E0E;
+}
+body.jour .progression div {
+  border-color: #0E0E0E;
+}
+body.jour .progression div:hover {
+  background-color: #0E0E0E;
+}
+body.jour .progression .position {
+  background-color: #0E0E0E;
+}
+body.jour ::-webkit-scrollbar-thumb {
+  background-color: #0E0E0E;
+}
+body.jour .rectangle {
+  border-color: #0E0E0E;
+}
+body.jour button {
+  background-color: transparent;
+  color: #0E0E0E;
+}
+body.jour button:hover {
+  background-color: #0E0E0E;
+  color: #FFF2C8;
+}
+body.jour button:hover svg {
+  stroke: #FFF2C8;
+}
+body.jour button svg {
+  stroke: #0E0E0E;
+}
+body.jour .fond-noir {
+  background-color: #0E0E0E;
+}
+body.jour .fond-noir a {
+  color: #FFF2C8;
+}
+body.jour .coordonnees svg {
+  fill: #0E0E0E;
+}
+body.jour .formulaire {
+  background-color: #0E0E0E;
+  color: #FFF2C8;
+}
+body.jour .formulaire h3 {
+  color: #FFF2C8;
+}
+body.jour .formulaire label {
+  color: #FFF2C8;
+}
+body.jour .formulaire input, body.jour .formulaire textarea {
+  border-color: #FFF2C8;
+  color: #FFF2C8;
+  background-color: #0E0E0E;
+}
+
+body.nuit {
+  background-color: #0E0E0E;
+}
+body.nuit * {
+  color: #FFF2C8;
+}
+body.nuit header {
+  background-color: #0E0E0E;
+  border-bottom-color: #FFF2C8;
+}
+body.nuit .active::after {
+  background-color: #FFF2C8;
+}
+body.nuit .barre::after {
+  background-color: #FFF2C8;
+}
+body.nuit .mode-nuit svg {
+  stroke: #FFF2C8;
+}
+body.nuit .mode-nuit:hover svg {
+  fill: #FFF2C8;
+}
+body.nuit .progression div {
+  border-color: #FFF2C8;
+}
+body.nuit .progression div:hover {
+  background-color: #FFF2C8;
+}
+body.nuit .progression .position {
+  background-color: #FFF2C8;
+}
+body.nuit ::-webkit-scrollbar-thumb {
+  background-color: #FFF2C8;
+}
+body.nuit .rectangle {
+  border-color: #FFF2C8;
+}
+body.nuit button {
+  background-color: transparent;
+  color: #FFF2C8;
+}
+body.nuit button:hover {
+  background-color: #FFF2C8;
+  color: #0E0E0E;
+}
+body.nuit button:hover svg {
+  stroke: #0E0E0E;
+}
+body.nuit button svg {
+  stroke: #FFF2C8;
+}
+body.nuit .fond-noir {
+  background-color: #FFF2C8;
+}
+body.nuit .fond-noir a {
+  color: #0E0E0E;
+}
+body.nuit .coordonnees svg {
+  fill: #FFF2C8 !important;
+}
+body.nuit .formulaire {
+  background-color: #FFF2C8;
+  color: #0E0E0E;
+}
+body.nuit .formulaire h3 {
+  color: #0E0E0E;
+}
+body.nuit .formulaire label {
+  color: #0E0E0E;
+}
+body.nuit .formulaire input, body.nuit .formulaire textarea {
+  border-color: #0E0E0E;
+  color: #0E0E0E;
+  background-color: #FFF2C8;
+}/*# sourceMappingURL=jour-nuit.css.map */

@@ -1,0 +1,72 @@
+@import "./propreties.scss";
+
+section#projets {
+    .projet-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 150px auto;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+
+            .projet-visuel {
+                margin-left: 100px;
+                
+                .fond-noir {
+                    bottom: -30px;
+                    right: 50px;
+                }
+            }
+        }
+
+        &:nth-child(odd) {
+            flex-direction: row;
+
+            .projet-visuel {
+                margin-right: 100px;
+            }
+        }
+
+        .projet-visuel {
+            width: 35%;
+            position: relative;
+
+            .projet-image {
+                height: auto;
+                width: 300px;
+                position: relative;
+                z-index: 2;
+
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+
+            .fond-noir {
+                width: 300px;
+                height: 205px;
+                position: absolute;
+                z-index: 1;
+                bottom: -30px;
+                right: -50px;
+
+                a {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 1.4em;
+
+                }
+
+            }
+
+            
+        }
+
+        .projet-texte {
+            // width: 65%;
+        }
+    }
+}
